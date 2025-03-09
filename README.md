@@ -1,1 +1,1 @@
-https://ushakov341.github.io/
+https://ushakov341.github.io/github.io/
