@@ -9,54 +9,26 @@
   <body background="images/background.png">
     <header class="header">
       <div class="header__left">
-        <button class="header__menu">
-          <img src="images/burger.svg" alt="меню" class="header__burger" />
-        </button>
-
-        <a href="#" class="header__logo"
-          ><img src="images/logo.png" alt="лого" class="header__logo"
-        /></a>
-
+        <button class="header__menu"></button>
+        <a href="#" class="header__logo"></a>
         <img
           src="images/line.png"
           alt="разделитель"
           class="header__devider-left"
         />
       </div>
+
       <div class="header__right">
-        <a href="#" class="header__call-link"
-          ><img src="images/call.svg" alt="позвонить" class="header__call"
-        /></a>
-
-        <a href="#" class="header__message-link"
-          ><img src="images/chat.svg" alt="написать" class="header__message"
-        /></a>
-
-        <a href="#" class="header__profile-link"
-          ><img src="images/profile.svg" alt="профиль" class="header__profile"
-        /></a>
-
+        <button class="header__call"></button>
+        <button class="header__message"></button>
+        <button class="header__profile"></button>
         <img
           src="images/line.png"
           alt="разделитель"
           class="header__devider-right"
         />
-
-        <a href="#" class="header__repair-link"
-          ><img
-            src="images/repair.svg"
-            alt="Услуги ремонта"
-            class="header__repair"
-          />Оставить заявку</a
-        >
-
-        <a href="#" class="header__status-link"
-          ><img
-            src="images/checkstatus.svg"
-            alt="Прроверить статус ремонта"
-            class="header__status"
-          />Статус ремонта</a
-        >
+        <button class="header__repair"></button>
+        <button class="header__status"></button>
       </div>
     </header>
 
@@ -69,49 +41,28 @@
       <h1 class="headline__title">Услуги и сервисы</h1>
 
       <section class="headline__right">
-        <a href="#" class="headline__repair-link2"
-          >Оставить заявку<img
-            src="images/repair.svg"
-            alt="Услуги ремонта"
-            class="header__repair2"
-        /></a>
+        <label for="headline__repair">Оставить заявку</label>
+        <button class="headline__repair"></button>
 
-        <a href="#" class="headline__status-link2"
-          >Статус ремонта<img
-            src="images/checkstatus.svg"
-            alt="Прроверить статус ремонта"
-            class="headline__status"
-        /></a>
+        <label for="headline__status">Статус ремонта</label>
+        <button class="headline__status"></button>
       </section>
     </section>
+
     <nav class="services">
       <ul class="services-items">
-        <a href="#" class="services__brends-link"
-          ><li class="services__brends services--hover">
-            Ремонтируемые бренды
-          </li></a
-        >
-        <a href="#" class="services__devices-link"
-          ><li class="services__devices services--hover">
-            Ремонтируемые устройства
-          </li></a
-        >
-        <a href="#" class="services__prices-link"
-          ><li class="services__prices services--hover">Цены на услуги</li></a
-        >
-        <a href="#" class="services__adresses-link"
-          ><li class="services__adresses services--hover">
-            Адреса сервисных центров
-          </li></a
-        >
-        <a href="#" class="services__special-prices-link"
-          ><li class="services__special-prices services--hover">
-            Специальные цены
-          </li></a
-        >
-        <a href="#" class="services__reviews-link"
-          ><li class="services__reviews services--hover">Отзывы</li></a
-        >
+        <li class="services__brends services--hover">Ремонтируемые бренды
+        </li>
+        <li class="services__devices services--hover">Ремонтируемые устройства
+        </li>
+        <li class="services__prices services--hover">Цены на услуги
+        </li>
+        <li class="services__adresses services--hover">Адреса сервисных центров
+        </li>
+        <li class="services__special-prices services--hover">Специальные цены
+        </li>
+        <li class="services__reviews services--hover">Отзывы
+        </li>
       </ul>
     </nav>
 
@@ -137,12 +88,8 @@
           </p>
 
           <span class="next">
-            <img
-              src="images/expand.png"
-              alt="читать далее"
-              class="next__expand"
-            />
-            <label for="next">Читать далее</label>
+            <button class="next__button"></button>
+            <label for="next__button">Читать далее</label>
           </span>
         </div>
         <div class="main-photo">

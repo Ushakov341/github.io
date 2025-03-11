@@ -22,6 +22,83 @@ body {
   height: 64px;
 }
 
+.header__logo {
+  background: url(images/logo.png) no-repeat center;
+  min-width: 96.55px;
+  min-height: 50.81px;
+  cursor: pointer;
+}
+
+.header__menu {
+  background: url(images/burger.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.header__call {
+  background: url(images/call.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.header__message {
+  background: url(images/chat.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.header__profile {
+  background: url(images/profile.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.header__repair {
+  background: url(images/repair.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.header__status {
+  background: url(images/checkstatus.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.headline__repair {
+  background: url(images/repair.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.headline__status {
+  background: url(images/checkstatus.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.next__button {
+  background: url(images/expand.png) no-repeat left;
+  min-width: 24px;
+  min-height: 24px;
+  cursor: pointer;
+  border: none;
+}
+
 .headline {
   display: flex;
   justify-content: start;
@@ -58,6 +135,7 @@ body {
   white-space: nowrap;
   overflow-x: scroll;
   padding-left: 0;
+  cursor: pointer;
 }
 
 .services-items * {
@@ -74,7 +152,6 @@ body {
 
 .article,
 .services-items,
-.headline-1__title,
 .headline__right {
   font-family: "TTLakes-Regular";
 }
@@ -94,7 +171,7 @@ body {
 .services--hover:focus {
   background-color: #ffffff;
   border: 3px solid #b8ffec;
-  border-radius: 3px;
+  border-radius: 2px;
   margin-left: 0;
 }
 
@@ -109,14 +186,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .header__repair-link,
-  .header__status-link {
-    font-size: 0;
-  }
 
-  .header__call-link,
-  .header__message-link,
-  .header__profile-link,
+  .header__call,
+  .header__message,
+  .header__profile,
   .headline__right,
   .main__paragraph-2,
   .main__paragraph-3,
@@ -266,10 +339,6 @@ body {
     margin-left: 24px;
   }
 
-  .headline__highlight {
-
-  }
-
   .headline__right {
     display: flex;
     justify-content: center;
@@ -277,7 +346,7 @@ body {
     gap: 8px;
   }
 
-  .headline__repair-link2, .headline__status-link2 {
+  .headline__repair, .headline__status {
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -285,6 +354,7 @@ body {
     color: #1b1c21;
     font-size: 2vh;
     gap: 8px;
+    border: none;
   }
 
   .main {
