@@ -11,8 +11,132 @@
   src: local("TTLakes-Regular"),
     url("/Fonts/TTLakes/TTLakes-Regular.woff") format("woff");
 }
+/*боковое меню */
+.menu-block {
+  font-family: "TTLakes-Regular";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  height: 100vh;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  padding-top: 24px;
+  box-shadow: 16px 0 52px 0 #0E185033,
+  -2px 0 4px #454F7E05;
+}
 
-body {
+.top__header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.top__header .top__left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 18px;
+}
+
+.top__header .top__right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu {
+  margin-left: -24px;
+}
+
+.menu__items li {
+  font-family: "TTLakes-Regular";
+  font-weight: 200;
+  font-size: 16px;
+  list-style-type: none;
+  height: 24px;
+  margin-bottom: 32px;
+  padding-left: 20px;
+}
+
+.menu__items li:hover,
+.menu__items li:active,
+.menu__items li:focus {
+  font-style: "TTLakes-Medium";
+  font-weight: 400;
+  color: #7E7E82;
+  border-left: 3px solid #41F6D7;
+  border-radius: 2%;
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.top__burger-2:hover, .top__search:hover,
+.top__burger-2:active, .top__search:active,
+.top__burger-2:focus, .top__search:focus {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+.footer {
+  padding-left: 24px;
+}
+
+.footer__buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footer__buttons >*:hover,
+.footer__buttons >*:active,
+.footer__buttons >*:focus {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+.languages >*:hover,
+.languages >*:active,
+.languages >*:focus {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
+.languages {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  height: 24px;
+  margin-bottom: 32x;
+  margin-top: 10px;
+}
+
+.languages >* {
+  background-color: white;
+  border: none;
+}
+
+.email {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.number {
+  font-size: 24px;
+  font-family: "TTLakes-Medium";
+  font-weight: 800;
+  margin-top: 12px;
+
+}
+/*конец бокового меню */
+
+
+.body {
   margin: 0;
   width: 96vw;
 }
@@ -29,6 +153,13 @@ body {
   cursor: pointer;
 }
 
+.top__logo {
+  background: url(images/logo.png) no-repeat center;
+  min-width: 96.55px;
+  min-height: 50.81px;
+  cursor: pointer;
+}
+
 .header__menu {
   background: url(images/burger.svg) no-repeat center;
   min-width: 40px;
@@ -37,7 +168,15 @@ body {
   border: none;
 }
 
-.header__call {
+.top__burger-2 {
+  background: url(images/burger-2.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.header__call, .footer__call {
   background: url(images/call.svg) no-repeat center;
   min-width: 40px;
   min-height: 40px;
@@ -45,7 +184,7 @@ body {
   border: none;
 }
 
-.header__message {
+.header__message, .footer__message {
   background: url(images/chat.svg) no-repeat center;
   min-width: 40px;
   min-height: 40px;
@@ -53,7 +192,7 @@ body {
   border: none;
 }
 
-.header__profile {
+.header__profile, .footer__profile {
   background: url(images/profile.svg) no-repeat center;
   min-width: 40px;
   min-height: 40px;
@@ -69,7 +208,15 @@ body {
   border: none;
 }
 
-.header__status {
+.top__search  {
+  background: url(images/search.svg) no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+}
+
+.header__status  {
   background: url(images/checkstatus.svg) no-repeat center;
   min-width: 40px;
   min-height: 40px;

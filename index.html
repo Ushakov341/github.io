@@ -1,101 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сервис CPS</title>
+    <title>Left menu</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body background="images/background.png">
-    <header class="header">
-      <div class="header__left">
-        <button class="header__menu"></button>
-        <a href="#" class="header__logo"></a>
-        <img
-          src="images/line.png"
-          alt="разделитель"
-          class="header__devider-left"
-        />
-      </div>
-
-      <div class="header__right">
-        <button class="header__call"></button>
-        <button class="header__message"></button>
-        <button class="header__profile"></button>
-        <img
-          src="images/line.png"
-          alt="разделитель"
-          class="header__devider-right"
-        />
-        <button class="header__repair"></button>
-        <button class="header__status"></button>
-      </div>
-    </header>
-
-    <section class="headline">
-      <img
-        src="images/highlight.png"
-        alt="Услуги и сервисы"
-        class="headline__highlight"
-      />
-      <h1 class="headline__title">Услуги и сервисы</h1>
-
-      <section class="headline__right">
-        <label for="headline__repair">Оставить заявку</label>
-        <button class="headline__repair"></button>
-
-        <label for="headline__status">Статус ремонта</label>
-        <button class="headline__status"></button>
-      </section>
+  <body class="menu-block">
+    <section class="top">
+      <header class="top__header">
+        <section class="top__left">
+          <button href="#" class="top__burger-2"></button>
+          <a href="#" class="top__logo"></a>
+        </section>
+        <section class="top__right">
+          <button class="top__search"></button>
+        </section>
+      </header>
+      
+      <nav class="menu">
+        <ul class="menu__items">
+          <li class="menu__item">Ремонт техники</li>
+          <li class="menu__item">Услуги и сервисы</li>
+          <li class="menu__item">Корпоративным клиентам</li>
+          <li class="menu__item">Продавцам техники</li>
+          <li class="menu__item">Партнерам</li>
+          <li class="menu__item">Производителям</li>
+          <li class="menu__item">Наши сервисные центры</li>
+          <li class="menu__item">Контакты</li>
+        </ul>
+      </nav>
     </section>
 
-    <nav class="services">
-      <ul class="services-items">
-        <li class="services__brends services--hover">Ремонтируемые бренды
-        </li>
-        <li class="services__devices services--hover">Ремонтируемые устройства
-        </li>
-        <li class="services__prices services--hover">Цены на услуги
-        </li>
-        <li class="services__adresses services--hover">Адреса сервисных центров
-        </li>
-        <li class="services__special-prices services--hover">Специальные цены
-        </li>
-        <li class="services__reviews services--hover">Отзывы
-        </li>
-      </ul>
-    </nav>
+    <footer class="footer">
+      <section class="footer__buttons">
+        <button class="footer__call button"></button>
+        <button class="footer__message button"></button>
+        <button class="footer__profile button"></button>
+      </section>
 
-    <main class="main">
-      <article class="article">
-        <div class="article__paragraphs">
-          <p class="main__paragraph-1">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя.
-          </p>
+      <span class="email">mail@cps.com</span>
+      <br>
+      <span class="number">8 800 890 8900</span>
 
-          <p class="main__paragraph-2">
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера
-          </p>
+      <section class="languages">
+        <button class="languages__ru">RU</button>
+        <button class="languages__en">EN</button>
+        <button class="languages__ch">CH</button>
+      </section>
 
-          <p class="main__paragraph-3">
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера, что подтверждает большое количество постоянных клиентов.
-            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-            очередь, советуют нас родным и близким.
-          </p>
-
-          <span class="next">
-            <button class="next__button"></button>
-            <label for="next__button">Читать далее</label>
-          </span>
-        </div>
-        <div class="main-photo">
-          <img src="images/photo.jpg" alt="фотогрфия" class="main__photo" />
-        </div>
-      </article>
-    </main>
+    </footer>
   </body>
 </html>
