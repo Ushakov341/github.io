@@ -2,14 +2,17 @@
   font-family: "TTLakes-Medium";
   font-style: medium;
   font-weight: 900;
-  src: local("TTLakes-Medium"),
-    url("/Fonts/TTLakes/TTLakes-Medium") format("woff");
+    src: url("/Fonts/TTLakes/TTLakes-Medium.woff") format("woff");
+    src: url("/Fonts/TTLakes/TTLakes-Medium.ttf") format("ttf");
+    src: url("/Fonts/TTLakes/TTLakes-Medium.eot") format("eot");
 
   font-family: "TTLakes-Regular";
   font-style: normal;
   font-weight: 400;
-  src: local("TTLakes-Regular"),
-    url("/Fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+
+  src: url("/Fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+  src: url("/Fonts/TTLakes/TTLakes-Regular.ttf") format("ttf");
+  src: url("/Fonts/TTLakes/TTLakes-Regular.eot") format("eot");
 }
 
 /*боковое меню */
