@@ -11,6 +11,7 @@
   src: local("TTLakes-Regular"),
     url("/Fonts/TTLakes/TTLakes-Regular.woff") format("woff");
 }
+
 /*боковое меню */
 .menu-block {
   font-family: "TTLakes-Regular";
@@ -94,7 +95,7 @@
   display: flex;
   justify-content: flex-start;
   padding: 0;
-  gap: 16px;
+  gap: 7px;
 }
 
 .button {
@@ -107,10 +108,6 @@
 .footer__buttons > *:focus {
   transform: scale(1.2);
   transition-duration: 0.3s;
-}
-
-.footer__item {
-  list-style-type: none;
 }
 
 .contacts__email {
@@ -137,33 +134,25 @@
 
 .footer__langs {
   display: flex;
-  justify-content: space-between;
+  font-size: 16px;
+  gap: 7px;
+  margin-top: 0;
+  height: 24px;
+  font-style: "TTLakes-Medium";
+}
+.footer__item {
+  display: flex;
   align-items: center;
-  box-sizing: border-box;
-  margin-top: 40px;
-  gap: 16px;
-  padding-bottom: 12px;
-  margin-top: 12px;
-  height: 24px;
-  width: 87px;
 }
-
-.footer__lang {
-  border: none;
-  background-color: inherit;
-  width: 25px;
-  height: 24px;
-  margin: 0;
-  transition: color 0.2s ease-in-out;
+.footer__langs input[type="radio"] {
+  display: none;
 }
-
-.footer__lang:hover,
-.footer__lang:active,
-.footer__lang:focus {
-  color: #7e7e82;
-  margin-left: 20px;
+.footer__item label {
   cursor: pointer;
-  margin: 0;
+  background-color: none;
+}
+.footer__item input[type="radio"]:checked + label {
+  color: #7E7E82;
 }
 /*конец бокового меню */
 
