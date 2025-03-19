@@ -18,10 +18,10 @@
   flex-direction: column;
   justify-content: space-between;
   width: 320px;
-  height: 1024px;
+  height: 100vh;
   position: absolute;
-  left: 24px;
-  top: 24px;
+  left: 0;
+  top: 0;
   padding-top: 24px;
   box-shadow: 16px 0 52px 0 #0e185033, -2px 0 4px #454f7e05;
 }
@@ -46,7 +46,9 @@
 }
 
 .menu {
+  margin-top: 50px;
   margin-left: -24px;
+
 }
 
 .menu__items li {
@@ -140,8 +142,8 @@
   box-sizing: border-box;
   margin-top: 40px;
   gap: 16px;
-  padding-bottom: 32px;
-  margin-top: 40px;
+  padding-bottom: 12px;
+  margin-top: 12px;
   height: 24px;
   width: 87px;
 }
