@@ -1,0 +1,76 @@
+@import './variables.scss';
+
+.main {
+
+  &__photo {
+    margin: 0;
+    min-width: 35vw;
+  }
+
+@media screen and (max-width: 768px) {
+
+  &__paragraph-2,
+  &__paragraph-3,
+  &__paragraph-4 {
+    display: none;
+    }
+
+    &__paragraph-4 {
+      margin-left: 16px;
+    }
+
+  &__paragraph-1 {
+    font-family: "TTLakes-Regular";
+    font-weight: 800;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  &__photo {
+    width: 80vw;
+    margin: 0;
+    margin-left:24px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1365px) {
+
+  &__paragraph-3,
+  .hidden2 {
+    display: none;
+  }
+
+  &__photo {
+    margin: 0;
+    width: 40vw;
+  }
+
+  .article {
+    display: flex;
+    justify-content: center;
+    margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__paragraph-2,
+  .hidden2{
+    display: none;
+  }
+
+  .article {
+    display: flex;
+    justify-content: center;
+    margin-left: 24px;
+  }
+
+}
+}
+
+

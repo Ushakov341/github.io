@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.commerce {
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  font-weight: 100;
+  font-family: 'TTLakes-Medium';
+
+  & img {
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+}

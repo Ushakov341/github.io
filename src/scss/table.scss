@@ -1,0 +1,107 @@
+@import './variables.scss';
+.table {
+  display: flex;
+  flex-direction: column;
+  margin: 3vw;
+
+
+  &__title {
+    display: none;
+  }
+
+  &__row,
+  &__row-head {
+    height: 64px;
+    display: grid;
+    grid-template-columns: 50% repeat(3, 1fr);
+    background-color: $background;
+    position: relative;
+  }
+
+  &__row-head {
+    background-image: $bg-image;
+  }
+
+  &__row:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    width: 96%;
+    height: 1px;
+    background-color: $border;
+  }
+
+  &__head-item {
+    color: $brends-color;
+  }
+
+  &__head-item,
+  &__item {
+    text-align: left;
+    font-size: 16px;
+    align-items: center;
+    padding: 23px 3%;
+  }
+
+  &__row:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__row:last-child {
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 48px;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    & {
+      margin: 16px;
+    }
+    &__row-head {
+      display: none;
+    }
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 260px;
+      height: 200px;
+      border-radius: 10px;
+      flex-wrap: nowrap;
+      position: relative;
+      padding: 16px;
+      margin-right: 16px;
+    }
+
+    &__title {
+      display: flex;
+      color: $brends-color;
+      height: 20px;
+      padding: 0;
+      margin: 0;
+      margin-top: 16px;
+    }
+
+    &__item {
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__row .button {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+    }
+  }
+
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  transform: scale(1.1);
+  transition-duration: 0.1s;
+}

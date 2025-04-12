@@ -1,0 +1,17 @@
+
+.swiper {
+  margin: 0;
+  &-wrapper {
+    display: flex;
+  }
+  &-slide {
+    width: 224px;
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  &-pagination {
+    margin-top: 16px;
+  }
+}
+

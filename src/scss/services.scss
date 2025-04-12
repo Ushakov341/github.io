@@ -1,0 +1,78 @@
+@import './variables.scss';
+
+.services {
+  font-size: 14px;
+  margin-left: 8px;
+
+  .services-items {
+    display: flex;
+    flex: content;
+    justify-content: flex-start;
+    list-style-type: none;
+    height: 40px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding-left: 0;
+    cursor: pointer;
+  }
+
+  .services-items * {
+    display: inline-flex;
+    align-self: center;
+    flex-wrap: nowrap;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: $brends-color;
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 0;
+  }
+
+  .services-items::-webkit-scrollbar {
+    display: none;
+  }
+
+  .services--hover:hover,
+  .services--hover:active,
+  .services--hover:focus {
+    background-color: $background;
+    border: 3px solid $border-hover2;
+    border-radius: 2px;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .services {
+      margin: 0;
+      height: 40px;
+    }
+
+    &__brends-link,
+    &__brends {
+      display: none;
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1365px) {
+
+  &__brends-link &__brends {
+    display:none;
+    margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+
+    .services {
+      height: auto;
+    }
+
+    .services-items {
+      flex-wrap: wrap;
+      min-height: 40px;
+      height: auto;
+    }
+  }
+}

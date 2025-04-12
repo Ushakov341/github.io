@@ -1,0 +1,58 @@
+.common-footer {
+  display: flex;
+  max-width: 99vw;
+  flex-direction: row;
+  margin: 0;
+  margin-top: 8vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 21px;
+  gap: 50x;
+  padding-right: 40px;
+
+
+  &__item {
+    min-width: 330px;
+    flex-wrap: wrap;
+
+  }
+
+  &__item:last-child {
+    text-align: right;
+    justify-content: end;
+  }
+
+  &__item:nth-child(2) {
+    margin-top: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $brends-color;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+
+  }
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item:last-child {
+    text-align: center;
+    margin-left: 24px;
+  }
+
+}
+

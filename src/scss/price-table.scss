@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+.price-table {
+  font-size: 16px;
+  width: 100%;
+  background: linear-gradient(to right, $brends-bkg, $background);
+  min-height: 56px;
+  padding-left: 24px;
+  color: $brends-color;
+  align-content: center;
+  font-family: "TTLakes-Regular";
+  border-top: 1px solid $border-h2;
+}

@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+.sidebar {
+
+  position: absolute;
+  width: 276px;
+  left: 0;
+  top: 0;
+  padding-top: 24px;
+  height: 1925px;
+    background-color: $background;
+
+    @media screen and (max-width: 1365px) {
+    box-shadow: 16px 0 52px 0 $shadow-1, -2px 0 4px $shadow-2;
+}}

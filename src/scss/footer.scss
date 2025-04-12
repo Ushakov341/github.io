@@ -1,0 +1,85 @@
+@import './variables.scss';
+
+.footer {
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+
+  &__call {
+    background: $call no-repeat center;
+    min-width: 40px;
+    min-height: 40px;
+    cursor: pointer;
+    border: none;
+  }
+
+  &__message {
+    background: $chat no-repeat center;
+    min-width: 40px;
+    min-height: 40px;
+    cursor: pointer;
+    border: none;
+  }
+
+  &__profile {
+  background: $profile no-repeat center;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  border: none;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 16px;
+  }
+
+  .button {
+    border: none;
+    background-color: $background;
+  }
+
+  &__buttons > *:hover,
+  &__buttons > *:active,
+  &__buttons > *:focus {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+  }
+
+  &__langs {
+    display: flex;
+    font-size: 16px;
+    gap: 7px;
+    margin-top: 0;
+    height: 24px;
+    font-style: "TTLakes-Medium";
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__langs input[type="radio"] {
+    display: none;
+  }
+
+  &__item label {
+    cursor: pointer;
+    background-color: none;
+  }
+
+  &__item input[type="radio"]:checked + label {
+    color: $brends-color;
+  }
+
+  @media screen and (min-width: 1365px) {
+
+  margin-top: 110px;
+
+  }
+
+}

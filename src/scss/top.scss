@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.top {
+  @media screen and (min-width: 1366px) {
+
+    &__burger-2 {
+      display: none;
+    }
+ }
+    &__logo {
+      background: $logo no-repeat center;
+      min-width: 96.55px;
+      min-height: 50.81px;
+      cursor: pointer;
+    }
+
+    &__burger-2 {
+      background: $burger-2 no-repeat center;
+      min-width: 40px;
+      min-height: 40px;
+      cursor: pointer;
+      border: none;
+      position: absolute;
+      left: 306px;
+      top: 30px;
+      font-size: 0;
+    }
+
+    &__search {
+      background: $search no-repeat center;
+      min-width: 40px;
+      min-height: 40px;
+      cursor: pointer;
+      border: none;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 50px;
+    }
+
+    &__header &__left {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 18px;
+    }
+
+    &__header &__right {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+
+
+    &__burger-2:hover,
+    &__search:hover,
+    &__burger-2:active,
+    &__search:active,
+    &__burger-2:focus,
+    &__search:focus {
+      transform: scale(1.2);
+      transition-duration: 0.3s;
+    }
+
+
+}

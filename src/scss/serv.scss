@@ -1,0 +1,53 @@
+@import './variables.scss';
+
+
+.serv {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+
+  &__types {
+    display: inline-flex;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 24px;
+    margin-bottom: 5vw;
+    list-style-type: none;
+    display: flex;
+    width: 224px;
+    height: 160px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid $border;
+    border-radius: 7px;
+    background-color: $background;
+  }
+
+  &__name {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__button {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    background-color: $background;
+  }
+
+
+    &__card > *:hover,
+    &__card > *:active,
+    &__card > *:focus {
+      transform: scale(1.2);
+      transition-duration: 0.3s;
+    }
+  }
+

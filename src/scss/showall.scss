@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+.showall {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 160px;
+  height: 24px;
+  text-decoration: none;
+  padding-left: 32px;
+
+
+&__link {
+  font-family: "TTLakes-Regular";
+  color: $contacts-color;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
+
+@media screen and (min-width: 768px) {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-top: 16px;
+
+  & img {
+    transition: transform 0.3s ease;
+  }
+
+  &.expanded img {
+    transform: rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+    display: none;
+
+}
+}

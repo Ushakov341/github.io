@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.menu {
+
+  margin-top: 50px;
+  margin-left: -24px;
+
+
+  &__items li {
+    font-family: "TTLakes-Regular";
+    font-weight: 200;
+    font-size: 16px;
+    list-style-type: none;
+    height: 24px;
+    margin-bottom: 32px;
+    padding-left: 20px;
+  }
+
+&__items li:hover,
+&__items li:active,
+&__items li:focus {
+  font-style: "TTLakes-Medium";
+  font-weight: 400;
+  color: $brends-color;
+  border-left: 3px solid $border-hover;
+  border-radius: 2%;
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+}

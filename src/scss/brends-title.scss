@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+.brends-title {
+  font-size: 16px;
+  display: flex;
+  width: 100%;
+  background: linear-gradient(to right, $brends-bkg, $background);
+  min-height: 56px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 24px;
+  margin: 0;
+  color: $brends-color;
+  font-family: "TTLakes-Regular";
+  border-top: 1px solid $border-h2;
+
+}
